@@ -1,11 +1,8 @@
-# henry_pi_mlops
- Henry: Proyecto Individual MLOps
+# Henry: Proyecto Individual MLOps
 
- Este proyecto esta dividido en 4 partes.
+*Contexto.* Este proyecto responde a las consignas establecidas por la organizacion Henry como parte del primer proyecto individual: [MLOps](https://github.com/soyHenry/PI_ML_OPS).
 
-*Contexto.* El proyecto responde a las consignas establecidas por la organizacion Henry como parte del primer proyecto individual: [MLOps](https://github.com/soyHenry/PI_ML_OPS).
-
-En resumen, el proyecto consiste en limpiar y normalizar una base datos (ETL), examinar la naturaleza y composicion de los datos (EDA), diseñar e implementar un modelo de semejanza de caracteristicas de peliculas (ML), y alimentar un sistema de consultas a traves de un API.
+ El proyecto esta dividido en 4 partes. En resumen, el proyecto consiste en limpiar y normalizar una base datos (ETL), examinar la naturaleza y composicion de los datos (EDA), diseñar e implementar un modelo de semejanza de caracteristicas de peliculas (ML), y alimentar un sistema de consultas a traves de un API.
 
 **1. ETL**
 Para facilitar la lectura, dividimos el ETL en 4 fases:
@@ -19,4 +16,5 @@ Para facilitar la lectura, dividimos el ETL en 4 fases:
 **3. ML**
 
 **4. Prueba de consultas**
+
 En esta seccion, incluimos una prueba piloto de funciones que median las consultas: [Test de consultas](data_processing/06_test_funciones.ipynb)
