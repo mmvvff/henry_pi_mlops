@@ -19,7 +19,8 @@ data_mvp_recomendacion = pd.read_csv(
 app = FastAPI()
 
 
-@app.get("/peliculas_idioma/{idioma}")
+@app.get("/")
+@app.get("/pelicula_idioma/{idioma}")
 # definimos
 def pelicula_idioma(idioma: str):
     cantidad = (
@@ -30,7 +31,7 @@ def pelicula_idioma(idioma: str):
     return f"{cantidad} películas fueron estrenadas en idioma: {idioma}"
 
 
-@app.get("/peliculas_duracion/{pelicula}")
+@app.get("/pelicula_duracion/{pelicula}")
 # definimos
 def pelicula_duracion(pelicula: str):
     pelicula_title = str(pelicula)
@@ -58,7 +59,7 @@ def franquicia(franquicia: str):
     return f"La franquicia {franquicia_str} posee {cantidad} película(s), una ganancia total de USD${ganancia_res}, y una ganancia promedio de USD${promedio_res} por pelicula."
 
 
-@app.get("/peliculas_pais/{pais}")
+@app.get("/pelicula_pais/{pais}")
 # definimos
 def pelicula_pais(pais: str):
     pais_str = str(pais)
@@ -70,7 +71,7 @@ def pelicula_pais(pais: str):
     return f"Se produjeron {cantidad} películas en el país {pais}"
 
 
-@app.get("/productoras_exitosas/{productora}")
+@app.get("/productora_exitosa/{productora}")
 # definimos
 def productora_exitosa(productora: str):
     productora_subset = data_mvp_funciones.loc[
@@ -82,7 +83,7 @@ def productora_exitosa(productora: str):
     return f"La productora {productora} ha tenido un revenue total de USD${revenue_res}, y realizo un total de {cantidad} de pelicula(s)"
 
 
-@app.get("/get_director/{director}")
+@app.get("/director_exitoso/{director}")
 # definimos
 def director_exitoso(director: str):
     director_subset = data_mvp_director.loc[
