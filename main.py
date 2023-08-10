@@ -1,6 +1,6 @@
-from fastapi import FastAPI
 import os
 import pandas as pd
+from fastapi import FastAPI
 
 # cargamos los datos
 data_mvp_funciones = pd.read_csv(
