@@ -20,15 +20,15 @@ app = FastAPI()
 
 
 @app.get("/")
-@app.get("/pelicula_idioma/{idioma}")
+@app.get("/pelicula_idioma/{Idioma}")
 # definimos
-def pelicula_idioma(idioma: str):
+def pelicula_idioma(Idioma: str):
     cantidad = (
         data_mvp_funciones["pelicula_id"]
-        .loc[data_mvp_funciones["original_language"].isin([idioma])]
+        .loc[data_mvp_funciones["original_language"].isin([Idioma])]
         .nunique()
     )
-    return f"{cantidad} películas fueron estrenadas en idioma: {idioma}"
+    return f"{cantidad} películas fueron estrenadas en idioma: {Idioma}"
 
 
 @app.get("/pelicula_duracion/{pelicula}")
@@ -115,3 +115,16 @@ def director_exitoso(director: str):
         "retorno total": director_return_res,
         "peliculas": peliculas,
     }
+
+
+@app.get("/recomendacion_pelicula/{titulo_pelicula}")
+# definimos
+def recomendacion_pelicula(titulo_pelicula: str):
+    recomendacion_subset = data_mvp_recomendacion.loc[
+        data_mvp_recomendacion["title"].isin([titulo_pelicula])
+    ]
+    pelicula_vecinos = (
+        recomendacion_subset[["vecino_title"]].reset_index().drop_duplicates()
+    )
+    pelicula_recomend = list(pelicula_vecinos["vecino_title"])
+    return {"pelicula": titulo_pelicula, "recomendaciones": pelicula_recomend}
