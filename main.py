@@ -20,15 +20,19 @@ app = FastAPI()
 
 
 @app.get("/")
-@app.get("/pelicula_idioma/{Idioma}")
+async def root():
+    return {"message": "API del proyecto: Henry PI_MLOPS, por mmvvff"}
+
+
+@app.get("/pelicula_idioma/{idioma_pelicula}")
 # definimos
-def pelicula_idioma(Idioma: str):
+def pelicula_idioma(idioma_pelicula: str):
     cantidad = (
         data_mvp_funciones["pelicula_id"]
-        .loc[data_mvp_funciones["original_language"].isin([Idioma])]
+        .loc[data_mvp_funciones["original_language"].isin([idioma_pelicula])]
         .nunique()
     )
-    return f"{cantidad} películas fueron estrenadas en idioma: {Idioma}"
+    return f"{cantidad} películas fueron estrenadas en idioma: {idioma_pelicula}"
 
 
 @app.get("/pelicula_duracion/{pelicula}")
