@@ -21,4 +21,4 @@ El sistema de recomendación esta basado en un [modelo no-supervisado.](data_prc
 
 1. Prueba piloto de funciones que median las consultas: [Test de consultas.](data_prcssng/07_test_funciones.ipynb)
 2. El API de consultas implementado en Render: [Enlace API.](https://henry-mlops-imdb.onrender.com/docs)
-3. Prueba de implementación del API: [video](https://drive.google.com/file/d/1l-MMHhXAwCUvZRURkKEe8IElyGFvi4lg/view?usp=sharing)
+3. Prueba de implementación del API: [video](https://drive.google.com/file/d/1l_noVxU2NVhfE3jFHW210eWAeEiPmo22/view?usp=sharing)
