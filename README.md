@@ -29,4 +29,4 @@ El API con acceso a las consultas esta disponible en el siguiente [Enlace API](h
 
 **6. Video: API consultas**
 
-En caso que no se posible acceder [Enlace API](https://henry-mlops-imdb.onrender.com/docs), se ponde a disposición el siguiente video.
+En caso que no se posible acceder [Enlace API](https://henry-mlops-imdb.onrender.com/docs), se ponde a disposición el siguiente [video](https://drive.google.com/file/d/1l-MMHhXAwCUvZRURkKEe8IElyGFvi4lg/view?usp=sharing)
