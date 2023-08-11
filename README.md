@@ -11,8 +11,8 @@ Para facilitar la lectura, dividimos la fase de ETL en 4 fases:
 3. [Desanidar credits](data_prcssng/03_etl_credits_desanidar_v3.ipynb)
 4. [Generar dfs para alimentar consultas del API](data_prcssng/04_etl_merge_datafinal_v2.ipynb)
 
-#### 2. EDA
-La fase del analisis exploratorio de datos esta orientada por la siguiente pregunta: [¿Qué podemos esperar como resultado en las consultas?](data_prcssng/05_eda_v1.ipynb)
+#### 2. EDA
+La fase del [analisis exploratorio de datos](data_prcssng/05_eda_v1.ipynb) esta orientada por la siguiente pregunta: ¿Qué podemos esperar como resultado en las consultas?
 
 #### 3. ML del sistema de recomendacion
 El sistema de recomendación esta basado en un [modelo no-supervisado.](data_prcssng/06_ml_recomendaciones_v3.ipynb)
