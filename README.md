@@ -1,6 +1,6 @@
 # Henry: Individual MLOps Project
 
-[Spanish]()
+[Spanish](https://github.com/mmvvff/henry_pi_mlops/blob/main/README_ES.md)
 
 *Context.* This project responds to the guidelines established by the Henry organization as part of the first individual project: [MLOps](https://github.com/soyHenry/PI_ML_OPS).
 
@@ -24,4 +24,4 @@ The recommendation system is based on an [unsupervised model.](data_prcssng/06_m
 1. Pilot test of functions that mediate queries: [Query test.](data_prcssng/07_test_funciones.ipynb)
 2. The query API implemented on Render: [API Link.](https://henry-mlops-imdb.onrender.com/docs)
 3. API implementation test: [video](https://drive.google.com/file/d/1h8k3CaLe0Q51vcL0pdxmG2JCakkP_UNy/view?usp=sharing)
-4. Querying the API using Python.
+4. [Querying the API using Python](https://github.com/mmvvff/henry_pi_mlops/blob/main/data_prcssng/08_api_consult.ipynb).
